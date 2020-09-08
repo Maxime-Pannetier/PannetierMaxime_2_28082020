@@ -61,11 +61,146 @@ nav a
 
 .navigation:hover
 {
-    border-top-color: blue;
+    border-top-color: #0065FC;
 }
 
-#inscription
+#inscription a
 {
     font-weight: bold;
+    color: #0065FC;
     
 }
+
+/* SECTION RECHERCHE + FILTRES */
+
+#definition
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+/* BARRE DE RECHERCHE */
+form
+{   
+    height: 50px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.icon-search
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border: solid 1px #F2F2F2;
+}
+
+form i
+{   
+    margin: auto;
+}
+
+input
+{
+    width: 235px;
+    border: solid 1px #F2F2F2;
+}
+
+button
+{
+    width: 135px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
+
+/* FILTRES */
+
+#filter
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#filter h1
+{
+    margin-right: 35px; 
+}
+
+.filter-button
+{
+    display: flex;
+    border: solid 1px;
+    height: 50px;
+    align-items: center;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+
+.filter-button p
+{   
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.icon
+{
+    box-sizing: border-box;
+    display: flex;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+
+.icon i
+{
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;  
+    color: #0065FC;
+}
+
+
+
+/* INFO */
+
+#info
+{
+    display: flex;
+}
+
+#info-icon
+{
+    display: flex;
+    box-sizing: border-box;
+    border: solid 1px #F2F2F2;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+.fa-info
+{   
+    width: 100%;
+    height: 100%;
+    color: #0065FC;
+    font-size: 8px;
+}
+
+
