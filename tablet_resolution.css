@@ -3,11 +3,16 @@
     box-sizing: border-box;
 }
 
+body
+{
+    padding: 0;
+}
+
 header
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #logo
@@ -16,18 +21,31 @@ header
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
 }
 
 nav
 {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 nav ul
 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
    display: grid;
    grid-template-columns: 1fr 1fr;
    justify-content: space-between;
@@ -46,11 +64,14 @@ nav ul
 
 #inscription
 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    height: auto;
-    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
 }
 
 #bloc-page
@@ -117,7 +138,9 @@ nav ul
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-column-gap: 10px;
+    height: 145px;
 }
 
 #popular-accomodation h1
@@ -129,17 +152,17 @@ nav ul
 
 #result-accomodation
 {
-    background-color: white;
     width: 100%;
-    height: 100%;
-    grid-template-rows: 1fr;
-    padding: 30px 20px;
+    height: 600px;
+    background-color: white;
+    padding: 20px;
 }
 
 #result-list
 {
-    grid-template-columns: 1fr 1fr1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    height: 430px;
 }
 
 #result-accomodation h1
@@ -157,12 +180,15 @@ nav ul
 {
     display: flex;
     flex-direction: column;
-    max-height: auto;
     padding: 0 20px;
     width: 100%;
     max-height: 900px;
 }
 
+.activity-result
+{
+    width: 100%;
+}
 
 #activity-list
 {
@@ -183,8 +209,8 @@ nav ul
 
 footer
 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
 }
