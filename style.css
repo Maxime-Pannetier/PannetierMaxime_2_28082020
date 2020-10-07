@@ -1,218 +1,209 @@
 /* GENERAL */
 
-*
-{
+* {
     box-sizing: border-box;
     font-family: 'Raleway', Arial, sans-serif;
 }
 
-body
-{
+body {
     margin: 0;
 }
 
-#bloc-page
-{
+#bloc-page {
     width: 100%;
     margin: 0;
     padding: 0 40px;
 }
 
-.good
-{
+.good {
     color: #0065FC;
 }
 
-.bad
-{
-    color:#F2F2F2;
+.bad {
+    color: #F2F2F2;
 }
 
-#accomodation a
-{
+#accomodation a {
     text-decoration: none;
     color: black;
 }
 
 /* POLICE */
 
-.result, .popular-result, .activity-result, h2, footer
-{
+.result, .popular-result, .activity-result, h2, footer {
     font-size: 0.8em;
 }
 
-h1
-{
+h2 {
     font-size: 1.3em;
 }
 
-footer h2
-{
+nav {
+    font-size: 0.8em;
+}
+
+#result-accomodation h3 {
+    font-weight: bold;
+}
+
+footer h3 {
     font-size: 1em;
+}
+
+#definition {
+    font-weight: bold;
+}
+
+em {
+    font-weight: normal;
+    font-style: italic;
 }
 
 /* HEADER */
 
-header
-{   
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr;
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
-#logo
-{
+#logo {
     padding: 20px 0;
 }
 
-
 /* NAVIGATION */
 
-nav
-{
-    
+nav {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 320px 100px;
     grid-template-rows: 1fr;
 }
 
-nav ul
-{   
+nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style-type: none;
     height: 100%;
     margin: 0;
     padding: 0;
-    
 }
 
-nav li
-{
+nav li {
     border: solid white;
     height: 100%;
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px 0;
     text-align: center;
-   
 }
 
-nav a
-{
+nav a {
     font-size: 1.3em;
     color: black;
     text-decoration: none;
 }
 
-nav a:hover
-{
+nav a:hover {
     color: #0065FC;
     font-weight: bold;
 }
 
-.navigation:hover
-{
+.navigation:hover {
     border-top-color: #0065FC;
 }
 
-#inscription
-{
+#inscription {
     border: solid white;
     text-align: center;
     vertical-align: middle;
-    padding: 20px 10px;
+    padding: 20px 0;
     font-weight: bold;
     color: #0065FC;
 }
 
 /* SECTION RECHERCHE + FILTRES */
 
-#search-filter
-{
+#search-filter {
     display: flex;
     flex-direction: column;
     margin: 35px 0;
 }
 
-#definition
-{
+#definition {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
+#definition p {
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /* BARRE DE RECHERCHE */
-form
-{   
+
+form {
     height: 50px;
     display: flex;
     margin-bottom: 30px;
 }
 
-.icon-search
-{
+.icon-search {
     display: flex;
     justify-content: center;
     align-content: center;
     width: 50px;
     background-color: #F2F2F2;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
     border: solid 1px #F2F2F2;
 }
 
-form i
-{   
+form i {
     margin: auto;
 }
 
-input
-{
+input {
     width: 235px;
     border: solid 1px #F2F2F2;
+    padding: 15px;
+    font-weight: bold;
 }
 
-button
-{
+button {
     width: 135px;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 15px 15px 0px;
     border: none;
     cursor: pointer;
 }
 
-.fas.fa-search
-{
+.fas.fa-search {
     display: none;
 }
 
 /* FILTRES */
 
-#filter
-{
+#filter {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-#filter-list
-{
+#filter-list {
     display: flex;
 }
 
-#filter h1
-{
-    margin-right: 35px; 
+#filter h2 {
+    margin-right: 35px;
+    font-size: 1em;
 }
 
-.filter-button
-{
+.filter-button {
     box-sizing: border-box;
     display: flex;
     border: solid 1px #F2F2F2;
@@ -222,21 +213,18 @@ button
     margin-right: 25px;
 }
 
-.filter-button:hover
-{
+.filter-button:hover {
     background-color: #0065FC;
     color: white;
 }
 
-.filter-button p
-{   
+.filter-button p {
     width: 100%;
     padding: 10px;
     font-weight: bold;
 }
 
-.filter-button .icon
-{
+.filter-button .icon {
     box-sizing: border-box;
     display: flex;
     width: 50px;
@@ -247,28 +235,23 @@ button
     margin-left: -2px;
 }
 
-.icon i
-{
+.icon i {
     display: block;
     box-sizing: border-box;
     width: 50px;
     margin: auto;
     justify-content: center;
-    text-align: center;  
+    text-align: center;
     color: #0065FC;
 }
 
-
-
 /* INFO */
 
-#info
-{
+#info {
     display: flex;
 }
 
-#info-icon
-{
+#info-icon {
     display: flex;
     box-sizing: border-box;
     border: solid 1px #F2F2F2;
@@ -278,21 +261,18 @@ button
     border-radius: 50%;
     text-align: center;
     margin-right: 10px;
-    
 }
 
-.fa-info
-{   
-    width: 100%;
-    height: 100%;
+.fa-info {
+    width: 20px;
+    height: 20px;
     color: #0065FC;
     font-size: 8px;
 }
 
 /* ACCOMODATION */
 
-#accomodation
-{
+#accomodation {
     display: flex;
     width: 100%;
     min-height: 625px;
@@ -301,8 +281,7 @@ button
 
 /* SECTION RESULT ACCOMODATION */
 
-#result-accomodation
-{
+#result-accomodation {
     width: 65.67%;
     background-color: #F2F2F2;
     padding: 0 40px;
@@ -311,15 +290,13 @@ button
     grid-template-rows: 15% 70% 15%;
 }
 
-#result-accomodation h1, h2
-{
+#result-accomodation h2, h3 {
     margin: 0;
     display: flex;
     align-items: center;
 }
 
-#result-list
-{
+#result-list {
     height: 100%;
     width: 100%;
     display: grid;
@@ -327,11 +304,9 @@ button
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 30px;
     grid-column-gap: 30px;
-    
 }
 
-.result
-{   
+.result {
     background-color: white;
     width: 100%;
     height: 100%;
@@ -339,55 +314,59 @@ button
     margin: 0px;
     padding: 5px;
     border-radius: 15px;
-    box-shadow: 6px 6px 15px grey;
+    box-shadow: 6px 6px 6px #e6e6e6;
     display: grid;
     grid-template-rows: 60% 40%;
-    
 }
 
-#result-list img
-{
+#result-list img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-#result-list figcaption
-{
+#result-list figcaption {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     padding: 5px;
+}
+
+#result-list figcaption p {
+    height: 100%;
+    margin: 0;
+    vertical-align: middle;
 }
 
 /* POPULAR ACCOMODATION */
 
-#popular-accomodation
-{
+#popular-accomodation {
     width: 31.34%;
     padding: 0 35px;
     background-color: #F2F2F2;
     display: grid;
     grid-template-rows: 15% 85%;
     border-radius: 15px;
-    
 }
 
-#popular-accomodation h1
-{
+#popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#popular-accomodation h2 {
     margin: 0;
     display: flex;
     align-items: center;
 }
 
-#popular-list
-{
+#popular-list {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.popular-result
-{   
+.popular-result {
     background-color: white;
     width: 100%;
     height: 100%;
@@ -395,11 +374,10 @@ button
     margin: 0px;
     padding: 5px;
     border-radius: 15px;
-    box-shadow: 6px 6px 15px grey;
+    box-shadow: 6px 6px 6px #e6e6e6;
 }
 
-.popular-result figure
-{
+.popular-result figure {
     margin: 0;
     width: 100%;
     height: 100%;
@@ -408,31 +386,32 @@ button
     grid-template-rows: 1fr;
 }
 
-#popular-accomodation img
-{
+#popular-accomodation img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
 
-#popular-accomodation figcaption
-{
+#popular-accomodation figcaption {
     display: grid;
-    grid-template-rows:  30% 30% 10% 30%;
+    grid-template-rows: 60% 25% 15%;
     padding: 5px;
+}
+
+#popular-accomodation .note {
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 /* ACTIVITY */
 
-#activity
-{
-    margin-top:65px;
+#activity {
+    margin-top: 65px;
     margin-bottom: 60px;
 }
 
-#activity-list
-{
+#activity-list {
     width: 100%;
     height: 445px;
     display: flex;
@@ -440,11 +419,9 @@ button
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-   
 }
 
-.activity-result
-{
+.activity-result {
     display: grid;
     width: 22%;
     margin: 0;
@@ -452,48 +429,35 @@ button
     color: black;
 }
 
-
-.activity-result:nth-child(1)
-{
+.activity-result:nth-of-type(1) {
     height: 100%;
 }
 
-.activity-result:nth-child(2)
-{
+.activity-result:nth-of-type(2) {
     height: 55%;
+    max-height: 245px;
 }
 
-.activity-result:nth-child(3)
-{
+.activity-result:nth-of-type(3) {
     height: 37%;
+    max-height: 165px;
 }
 
-.activity-result:nth-child(4)
-{
+.activity-result:nth-of-type(4) {
     height: 100%;
 }
 
-.activity-result:nth-child(5)
-{
+.activity-result:nth-of-type(5) {
     height: 45%;
+    max-height: 200px ;
 }
 
-.activity-result:nth-child(6)
-{
+.activity-result:nth-of-type(6) {
     height: 47%;
+    max-height: 210px;
 }
 
-.activity-result figure
-{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 1fr 55px;
-}
-
-.activity-result img
-{
+.activity-result img {
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 3;
@@ -501,11 +465,18 @@ button
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 6px 6px 6px #F2F2F2;
+    box-shadow: 6px 6px 6px #e6e6e6;
 }
 
-.activity-result figcaption
-{
+.activity-result figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 55px;
+}
+
+.activity-result figcaption {
     grid-column-start: 1;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -514,39 +485,35 @@ button
     display: flex;
     align-items: center;
     padding-left: 10px;
-    border-radius:0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
 }
 
 /* FOOTER */
 
-footer
-{
+footer {
+    display: flex;
     background-color: #F2F2F2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 40px;
 }
 
-footer div
-{
+footer div {
     display: flex;
     flex-direction: column;
-    margin: 0 40px;
     width: 100%;
+    max-width: 300px;
+    margin-right: 110px;
 }
 
-footer h2
-{
+footer h3 {
     margin: 10px 0;
 }
 
-footer ul
-{
+footer ul {
     margin: 0;
     padding: 0;
 }
 
-footer li
-{
+footer li {
     list-style: none;
     margin: 10px 0;
     width: 100%;
