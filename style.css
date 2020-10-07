@@ -31,7 +31,7 @@ body {
 /* POLICE */
 
 .result, .popular-result, .activity-result, h2, footer {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 h2 {
@@ -55,8 +55,8 @@ footer h3 {
 }
 
 em {
-    font-weight: normal;
-    font-style: italic;
+    font-style: normal;
+    font-weight: 300;
 }
 
 /* HEADER */
@@ -335,7 +335,7 @@ button {
 #result-list figcaption p {
     height: 100%;
     margin: 0;
-    vertical-align: middle;
+    text-align: justify;
 }
 
 /* POPULAR ACCOMODATION */
@@ -395,7 +395,7 @@ button {
 
 #popular-accomodation figcaption {
     display: grid;
-    grid-template-rows: 60% 25% 15%;
+    grid-template-rows: 65% 20% 15%;
     padding: 5px;
 }
 
@@ -449,7 +449,7 @@ button {
 
 .activity-result:nth-of-type(5) {
     height: 45%;
-    max-height: 200px ;
+    max-height: 200px;
 }
 
 .activity-result:nth-of-type(6) {
