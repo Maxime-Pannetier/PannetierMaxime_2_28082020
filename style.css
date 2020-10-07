@@ -336,7 +336,6 @@ button {
     height: 100%;
     margin: 0;
     text-align: justify;
-
 }
 
 /* POPULAR ACCOMODATION */
@@ -399,7 +398,6 @@ button {
     grid-template-rows: 65% 20% 15%;
     padding: 5px;
 }
-
 
 #popular-accomodation .note {
     grid-row-start: 3;
